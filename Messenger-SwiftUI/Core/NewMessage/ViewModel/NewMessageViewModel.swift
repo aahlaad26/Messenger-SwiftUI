@@ -35,7 +35,7 @@ class NewMessageViewModel: ObservableObject{
                     return users
                 }
                 
-                return users.filter( { $0.fullname.lowercased().contains(searchText.lowercased()) } )
+                return users.filter( { $0.username.lowercased().contains(searchText.lowercased()) } )
             }
             .sink { [weak self] returnedSearch in
                 guard let self = self else { return }

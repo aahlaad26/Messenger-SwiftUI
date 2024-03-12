@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FD71D4B2B9047D5000217B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD71D4A2B9047D5000217B7 /* GoogleService-Info.plist */; };
+		0F333F4C2BA052C300B1DAFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F333F4B2BA052C300B1DAFF /* GoogleService-Info.plist */; };
 		DD09E8C32B28396400235491 /* Appcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09E8C12B28396400235491 /* Appcontroller.swift */; };
 		DD09E8C42B28396400235491 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09E8C22B28396400235491 /* Coordinator.swift */; };
 		DD09E8D02B283EFC00235491 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09E8C72B283EFB00235491 /* Color.swift */; };
@@ -95,7 +95,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0FD71D4A2B9047D5000217B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F333F4B2BA052C300B1DAFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD09E8C12B28396400235491 /* Appcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appcontroller.swift; sourceTree = "<group>"; };
 		DD09E8C22B28396400235491 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DD09E8C72B283EFB00235491 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -411,8 +411,8 @@
 				DDD1E2492B2814A00047F456 /* Service */,
 				DD09E8C02B28396400235491 /* Utilities */,
 				DDAE12A82B35858E00E03530 /* Launch Screen.storyboard */,
-				0FD71D4A2B9047D5000217B7 /* GoogleService-Info.plist */,
 				DDD1E23B2B28141B0047F456 /* Assets.xcassets */,
+				0F333F4B2BA052C300B1DAFF /* GoogleService-Info.plist */,
 				DDD1E23D2B28141B0047F456 /* Preview Content */,
 			);
 			path = "Messenger-SwiftUI";
@@ -642,8 +642,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FD71D4B2B9047D5000217B7 /* GoogleService-Info.plist in Resources */,
 				DDD1E23F2B28141B0047F456 /* Preview Assets.xcassets in Resources */,
+				0F333F4C2BA052C300B1DAFF /* GoogleService-Info.plist in Resources */,
 				DD09E8D32B283EFC00235491 /* Inter-Bold.ttf in Resources */,
 				DDD1E23C2B28141B0047F456 /* Assets.xcassets in Resources */,
 				DDAE12A92B35858F00E03530 /* Launch Screen.storyboard in Resources */,
@@ -843,7 +843,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Messenger-SwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = HUZQ9Z529P;
+				DEVELOPMENT_TEAM = RHL26U4H7P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Messenger-SwiftUI/Info.plist";
@@ -876,7 +876,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Messenger-SwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = HUZQ9Z529P;
+				DEVELOPMENT_TEAM = RHL26U4H7P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Messenger-SwiftUI/Info.plist";

@@ -67,7 +67,7 @@ struct ChatMessageCell: View {
                 .foregroundStyle(.text)
             
             Text(text)
-                .font(.regular(size: 14))
+                .font(.system(size: 14))
                 .foregroundStyle(.text)
         }
     }
@@ -127,7 +127,7 @@ extension ChatMessageCell{
     
     private func messageText(bgr: Color, fgr: Color, size: CGFloat, alignment: Alignment) -> some View{
         Text("\(message.messageText)")
-            .font(.medium(size: 15))
+            .font(.system(size: 14))
             .padding(12)
             .background(bgr)
             .foregroundStyle(fgr)
@@ -156,14 +156,14 @@ extension ChatMessageCell{
             }
             
             Text("Time: " + message.timestampString)
-                .font(.regular(size: 14))
+                .font(.system(size: 14))
                 .foregroundStyle(.text)
         }
     }
     
     private func unsendMessageText(text: String, size: CGFloat, alignment: Alignment) -> some View{
         Text("\(text)")
-            .font(.regular(size: 15))
+            .font(.system(size: 14))
             .padding(12)
             .foregroundStyle(.text).opacity(0.5)
             .overlay(
@@ -178,7 +178,7 @@ extension ChatMessageCell{
         Group{
             if isShowTime{
                 Text(message.timestampString)
-                    .font(.regular(size: 13))
+                    .font(.system(size: 14))
                     .foregroundStyle(.text).opacity(0.6)
                     .frame(maxWidth: size, alignment: alignment)
                     .padding(.vertical,2)

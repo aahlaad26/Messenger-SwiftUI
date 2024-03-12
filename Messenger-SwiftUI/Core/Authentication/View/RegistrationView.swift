@@ -54,7 +54,7 @@ extension RegistrationView{
         VStack(spacing: 12){
             TextField("Enter your email", text: $viewModel.email)
                 .focused($focusedField, equals: .email)
-                .font(.regular(size: 16))
+                .font(.system(size: 16))
                 .padding(12)
                 .background(Color(.systemGray6))
                 .cornerRadius(10)
@@ -62,7 +62,7 @@ extension RegistrationView{
             
             TextField("Enter your fullname", text: $viewModel.fullname)
                 .focused($focusedField, equals: .fullname)
-                .font(.regular(size: 16))
+                .font(.system(size: 16))
                 .padding(12)
                 .background(Color(.systemGray6))
                 .cornerRadius(10)
@@ -70,7 +70,7 @@ extension RegistrationView{
             
             SecureField("Enter your password", text: $viewModel.password)
                 .focused($focusedField, equals: .password)
-                .font(.regular(size: 16))
+                .font(.system(size: 16))
                 .padding(12)
                 .background(Color(.systemGray6))
                 .cornerRadius(10)
@@ -86,7 +86,7 @@ extension RegistrationView{
             signUp()
         }label: {
             Text("Sign up")
-                .font(.semibold(size: 14))
+                .font(.system(size: 14))
                 .foregroundStyle(.text2)
                 .frame(width: 360, height: 44)
                 .background(Color(.systemBlue))
@@ -98,10 +98,10 @@ extension RegistrationView{
     private var signInText: some View{
         HStack(spacing: 3){
             Text("Already have an account ?")
-                .font(.regular(size: 13))
+                .font(.system(size: 14))
             
             Text("Sign in")
-                .font(.bold(size: 13))
+                .font(.system(size: 13))
         }
         .foregroundStyle(.blue)
         .padding(.vertical)

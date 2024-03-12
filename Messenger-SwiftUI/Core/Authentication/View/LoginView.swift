@@ -60,7 +60,7 @@ extension LoginView{
         VStack(spacing: 12){
             TextField("Enter your email", text: $viewModel.email)
                 .focused($focusedField, equals: .email)
-                .font(.regular(size: 16))
+                .font(.system(size: 16))
                 .padding(12)
                 .background(Color(.systemGray6))
                 .cornerRadius(10)
@@ -68,7 +68,7 @@ extension LoginView{
             
             SecureField("Enter your password", text: $viewModel.password)
                 .focused($focusedField, equals: .password)
-                .font(.regular(size: 16))
+                .font(.system(size: 16))
                 .padding(12)
                 .background(Color(.systemGray6))
                 .cornerRadius(10)
@@ -84,7 +84,7 @@ extension LoginView{
             coordinator.push(.forgotPasswordView)
         }label: {
             Text("Forgot password?")
-                .font(.bold(size: 13))
+                .font(.system(size: 13))
                 .padding(.top)
                 .padding(.trailing,28)
         }
@@ -96,7 +96,7 @@ extension LoginView{
             login()
         }label: {
             Text("Login")
-                .font(.semibold(size: 14))
+                .font(.system(size: 14))
                 .foregroundStyle(.white)
                 .frame(width: 360, height: 44)
                 .background(Color(.systemBlue))
@@ -112,7 +112,7 @@ extension LoginView{
                     .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5 )
                 
                 Text("OR")
-                    .font(.semibold(size: 12))
+                    .font(.system(size: 12))
                 
                 Rectangle()
                     .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5 )
@@ -125,7 +125,7 @@ extension LoginView{
                     .frame(width: 20, height: 20)
                 
                 Text("Continue with fabebook")
-                    .font(.bold(size: 13))
+                    .font(.system(size: 14))
                     .foregroundStyle(.blue)
             }
             .padding(.top, 8)
@@ -141,10 +141,10 @@ extension LoginView{
             
             HStack(spacing: 3){
                 Text("Don't have an account?")
-                    .font(.regular(size: 13))
+                    .font(.system(size: 14))
                 
                 Text("Sign up")
-                    .font(.bold(size: 13))
+                    .font(.system(size: 14))
             }
             .foregroundStyle(.blue)
             .padding(.vertical)

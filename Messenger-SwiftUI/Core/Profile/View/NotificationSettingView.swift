@@ -19,7 +19,7 @@ struct NotificationSettingView: View {
                     .foregroundStyle(.text)
                 
                 Text("Notifications")
-                    .font(.semibold(size: 16))
+                    .font(.system(size: 16))
                     .foregroundStyle(.text)
             }
             .hAlign(.leading)
@@ -34,7 +34,7 @@ struct NotificationSettingView: View {
                     .tint(.blue)
                 
                 Text("If you turn off notifications you will not receive message notifications from friends")
-                    .font(.regular(size: 13))
+                    .font(.system(size: 14))
                     .padding(.vertical,5)
                     .foregroundStyle(.text)
                     .hAlign(.leading)
@@ -42,12 +42,12 @@ struct NotificationSettingView: View {
             }else{
                 VStack(spacing: 6){
                     Text("Please allow notifications in this app.")
-                        .font(.medium(size: 14))
+                        .font(.system(size: 14))
                         .foregroundStyle(.text)
                         .hAlign(.center)
                     
                     Text("Click here")
-                        .font(.bold(size: 13))
+                        .font(.system(size: 14))
                         .foregroundStyle(.blue)
                         .hAlign(.center)
                 }

@@ -47,7 +47,7 @@ struct ProfileView: View {
                                     
                                     Text(option.title)
                                         .foregroundStyle(.text)
-                                        .font(.regular(size: 16))
+                                        .font(.system(size: 14))
                                 }
                                 .onTapGesture {
                                     optionOntap(option: option)
@@ -102,7 +102,7 @@ extension ProfileView{
                     .foregroundStyle(.text)
                 
                 Text("Back")
-                    .font(.semibold(size: 16))
+                    .font(.system(size: 14))
                     .foregroundStyle(.text)
                 
                 Spacer()
@@ -112,7 +112,7 @@ extension ProfileView{
                         viewModel.upLoadAvatar()
                     }label: {
                         Text("Save")
-                            .font(.semibold(size: 16))
+                            .font(.system(size: 14))
                             .foregroundStyle(.blue)
                     }
                 }
@@ -187,14 +187,14 @@ extension ProfileView{
                         }
                     }label: {
                         Text("OK")
-                            .font(.semibold(size: 14))
+                            .font(.system(size: 14))
                             .foregroundStyle(.text)
                     }
                 }
                 .frame(width: 200, alignment: .center)
             }else{
-                Text("\(user?.fullname ?? "")")
-                    .font(.semibold(size: 20))
+                Text("\(user?.username ?? "")")
+                    .font(.system(size: 14))
                     .foregroundStyle(.text)
                 
                 Image(systemName: "pencil.and.outline")
@@ -217,7 +217,7 @@ extension ProfileView{
             showingLogout.toggle()
         }label: {
             Text("Log out")
-                .font(.regular(size: 16))
+                .font(.system(size: 14))
                 .foregroundStyle(.red)
         }
         .alert(isPresented: $showingLogout) {
@@ -244,7 +244,7 @@ extension ProfileView{
             showingAlertDeleteAccount.toggle()
         }label: {
             Text("Delete account")
-                .font(.regular(size: 16))
+                .font(.system(size: 14))
                 .foregroundStyle(.red)
         }
         .alert(isPresented: $showingAlertDeleteAccount) {

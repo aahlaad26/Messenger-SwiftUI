@@ -34,7 +34,7 @@ struct ForgotPasswordView: View {
             
             Text("Enter the email address associated to your account. We will send you a link to reset your password.")
                 .foregroundStyle(.text).opacity(0.7)
-                .font(.medium(size: 13))
+                .font(.system(size: 13))
                 .hAlign(.center)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
@@ -59,8 +59,7 @@ extension ForgotPasswordView{
     private var textfield: some View{
         VStack(spacing: 12){
             TextField("Enter your email", text: $viewModel.email)
-                .focused($focusedField, equals: .email)
-                .font(.regular(size: 16))
+              
                 .padding(12)
                 .background(Color(.systemGray6))
                 .cornerRadius(10)
@@ -76,7 +75,7 @@ extension ForgotPasswordView{
             send()
         }label: {
             Text("Send")
-                .font(.semibold(size: 14))
+                
                 .foregroundStyle(.text2)
                 .frame(width: 360, height: 44)
                 .background(Color(.systemBlue))
@@ -91,10 +90,10 @@ extension ForgotPasswordView{
             
             HStack(spacing: 3){
                 Text("Already have an account ?")
-                    .font(.regular(size: 13))
+                  
                 
                 Text("Sign in")
-                    .font(.bold(size: 13))
+                   
             }
             .foregroundStyle(.blue)
             .padding(.vertical)

@@ -31,7 +31,7 @@ struct ChangeDarkLightView: View {
                     .foregroundStyle(.text)
                 
                 Text("Dark mode")
-                    .font(.semibold(size: 16))
+                    .font(.system(size: 16))
                     .foregroundStyle(.text)
             }
             .hAlign(.leading)
@@ -51,7 +51,7 @@ struct ChangeDarkLightView: View {
                     }
                 )) {
                     Text(ToggleState.off.rawValue)
-                        .font(.bold(size: 14))
+                        .font(.system(size: 14))
                 }
                 .toggleStyle(iOSCheckboxToggleStyle())
                 
@@ -63,7 +63,7 @@ struct ChangeDarkLightView: View {
                     }
                 )) {
                     Text(ToggleState.on.rawValue)
-                        .font(.bold(size: 14))
+                        .font(.system(size: 14))
                 }
                 .toggleStyle(iOSCheckboxToggleStyle())
                 
@@ -75,7 +75,7 @@ struct ChangeDarkLightView: View {
                     }
                 )) {
                     Text(ToggleState.system.rawValue)
-                        .font(.bold(size: 14))
+                        .font(.system(size: 14))
                 }
                 .toggleStyle(iOSCheckboxToggleStyle())
             }
@@ -83,7 +83,7 @@ struct ChangeDarkLightView: View {
             .hAlign(.leading)
             
             Text("If system is selected Messager will automatically adjust your appearance based on your device's system setting.")
-                .font(.regular(size: 13))
+                .font(.system(size: 14))
                 .foregroundStyle(.text)
             
             Spacer()

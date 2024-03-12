@@ -33,7 +33,7 @@ struct CircularProfileImageView: View {
     let size: ProfileImageSize
     
     var body: some View {
-        if let imageUrl = user?.profileImageUrl{
+        if let imageUrl = user?.userprofileURL{
             KFImage(URL(string: imageUrl))
                 .resizable()
                 .fade(duration: 1)

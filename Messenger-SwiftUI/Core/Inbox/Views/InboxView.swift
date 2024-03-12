@@ -30,7 +30,7 @@ struct InboxView: View {
                     if viewModel.recentMessage.isEmpty{
                         Text("You don't have any conversations!")
                             .padding(.top,20)
-                            .font(.regular(size: 15))
+                            .font(.system(size: 15))
                             .foregroundStyle(.text).opacity(0.6)
                     }else{
                         LazyVStack{
@@ -77,7 +77,7 @@ extension InboxView{
             }
             
             Text("Chats")
-                .font(.semibold(size: 24))
+                .font(.system(size: 24))
                 .foregroundStyle(.text)
             
             Spacer()

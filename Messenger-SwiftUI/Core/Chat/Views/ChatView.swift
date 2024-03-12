@@ -80,7 +80,7 @@ extension ChatView{
                 .foregroundStyle(.text)
             
             Text("Back")
-                .font(.semibold(size: 14.5))
+                .font(.system(size: 14))
                 .foregroundStyle(.text)
                 .onTapGesture {
                     dismiss()
@@ -90,8 +90,8 @@ extension ChatView{
         .hAlign(.leading)
         .padding(.horizontal)
         .overlay{
-            Text(user.fullname)
-                .font(.semibold(size: 20))
+            Text(user.username)
+                .font(.system(size: 14))
                 .foregroundStyle(.text)
         }
         .padding(.bottom,8)
@@ -102,12 +102,12 @@ extension ChatView{
             CircularProfileImageView(user: user, size: .xLarge)
             
             VStack(spacing: 4){
-                Text(user.fullname)
-                    .font(.semibold(size: 17))
+                Text(user.username)
+                    .font(.system(size: 14))
                     .foregroundStyle(.text)
                 
                 Text("Messenger")
-                    .font(.regular(size: 13.5))
+                    .font(.system(size: 14))
                     .foregroundStyle(.gray)
             }
         }
@@ -120,7 +120,7 @@ extension ChatView{
                 .focused($focusedField, equals: .textInput)
                 .padding(12)
                 .padding(.trailing, 48)
-                .font(.regular(size: 14))
+                .font(.system(size: 14))
                 .overlay(
                     RoundedRectangle(cornerRadius: 16)
                         .inset(by: 0.5)

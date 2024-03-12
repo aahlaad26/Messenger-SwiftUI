@@ -18,7 +18,7 @@ struct NotificationView: View {
                 .padding(.trailing,5)
             
             Text(appController.MESSAGE_ON_SCREEN)
-                .font(.medium(size: 14))
+                .font(.system(size: 14))
                 .foregroundColor(.toastForeground)
                 .lineLimit(6)
                 .multilineTextAlignment(.leading)

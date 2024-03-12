@@ -74,7 +74,7 @@ extension ActiveNowView{
             
             Text("\(user.firstName)")
                 .foregroundStyle(.gray)
-                .font(.semibold(size: 12))
+                .font(.system(size: 12))
         }
     }
 }

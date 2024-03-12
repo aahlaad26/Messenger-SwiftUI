@@ -26,7 +26,7 @@ struct NewMessageView: View {
                 
                 Text("CONTACTS")
                     .foregroundStyle(.gray)
-                    .font(.regular(size: 13))
+                    .font(.system(size: 14))
                     .hAlign(.leading)
                     .padding()
                 
@@ -35,8 +35,8 @@ struct NewMessageView: View {
                         HStack{
                             CircularProfileImageView(user: user, size: .small)
                             
-                            Text("\(user.fullname)")
-                                .font(.semibold(size: 14))
+                            Text("\(user.username)")
+                                .font(.system(size: 14))
                                 .foregroundStyle(.text)
                             
                             Spacer()
@@ -68,13 +68,13 @@ extension NewMessageView{
             }label: {
                 Text("Cancel")
                     .foregroundStyle(.text)
-                    .font(.semibold(size: 16))
+                    .font(.system(size: 16))
             }
             .hAlign(.leading)
             .overlay {
                 Text("New Message")
                     .foregroundStyle(.text)
-                    .font(.semibold(size: 17))
+                    .font(.system(size: 16))
             }
         }
         .padding(.horizontal)

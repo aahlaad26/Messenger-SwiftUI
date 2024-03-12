@@ -21,10 +21,10 @@ struct InboxRowView: View {
             CircularProfileImageView(user: message.user, size: .medium)
             
             VStack(alignment: .leading, spacing: 13){
-                Text("\(message.user?.fullname ?? "")")
+                Text("\(message.user?.username ?? "")")
                     .foregroundStyle(.text)
-                    .font(unread ? .bold(size: 14) : .medium(size: 14))
-                
+                    .fontWeight(unread ? .bold : .light)
+            
                 messageView
             }
 
@@ -54,13 +54,13 @@ extension InboxRowView{
             if message.isRecalled{
                 Text("\(message.fromId == UserService.shared.currentUser?.id ? "You" : "\(message.user?.firstName ?? "")") unsend a message")
                     .foregroundStyle(unread ? .text : .gray)
-                    .font(unread ? .bold(size: 14) : .regular(size: 14))
+                    .fontWeight(unread ? .heavy : .regular)
                     .lineLimit(1)
                     .frame(maxWidth: UIScreen.main.bounds.width - 100, alignment: .leading)
             }else{
                 Text("\(message.fromId == UserService.shared.currentUser?.id ? "You: " : "")\(message.messageText)")
                     .foregroundStyle(unread ? .text : .gray)
-                    .font(unread ? .bold(size: 14) : .regular(size: 14))
+                    .fontWeight(unread ? .heavy : .regular)
                     .lineLimit(1)
                     .frame(maxWidth: UIScreen.main.bounds.width - 100, alignment: .leading)
             }
@@ -71,7 +71,7 @@ extension InboxRowView{
         HStack{
             Text("\(message.timestampString)")
                 .foregroundStyle(unread ? .text : .gray)
-                .font(unread ? .bold(size: 14) : .regular(size: 14))
+                .fontWeight(unread ? .heavy : .regular)
             
             Image(systemName: "chevron.right")
                 .imageScale(.small)
