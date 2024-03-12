@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyD-bHbL-mL7JNzjVgb6xOQO-mN9bAyP6SU</string>
+	<string>AIzaSyCXZa3lG1xhCvkMh5skji8O9fuLsd8n7jE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>151960018759</string>
+	<string>14444928423</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>in.edu.srmist.messenger</string>
 	<key>PROJECT_ID</key>
-	<string>messenger-f108d</string>
+	<string>chat3-add73</string>
 	<key>STORAGE_BUCKET</key>
-	<string>messenger-f108d.appspot.com</string>
+	<string>chat3-add73.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:151960018759:ios:c8b4343bfb4876856d3662</string>
+	<string>1:14444928423:ios:00c8c7ff97473770166a82</string>
 </dict>
 </plist>
